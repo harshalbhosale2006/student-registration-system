@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f7;
+      padding: 30px 15px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+    }
+    h2 { text-align: center; color: #234; }
+    label { display: block; margin-top: 15px; }
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #1769aa;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration</h2>
+
+    <form action="/register" method="POST">
+      <label>Full Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="text" name="email" required>
+
+      <label>Age</label>
+      <input type="number" name="age" required>
+
+      <label>Password</label>
+      <input type="password" name="password" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
